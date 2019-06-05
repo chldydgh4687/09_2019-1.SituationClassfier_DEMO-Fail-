@@ -8,6 +8,10 @@
 - Depth_Estimation 변수 및 필요없는 소스 코드 파일 재구성한다.
 - Disparity 파일이 제대로 추출되는지 DEMO 영상을 넣어 돌려본다. 
 
+#### colab에서 돌리기
+!git clone https://github.com/chldydgh4687/SituationClassfier_DEMO.git
+!python [파일이름].py --input [입력 변수]
+
 ### 최종 목표
 - 통합본을 만든다.
 
