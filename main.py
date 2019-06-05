@@ -8,12 +8,11 @@ print("video")
 count = 0
 
 while(vidcap.isOpened()):
-    print("5")
+ 
     ret, image = vidcap.read()
-    print("2")
-    cv2.imwrite("/images/frame%d.jpg"% count, image)
+    cv2.imwrite("./images/frame%d.jpg"% count, image)
     print("3")
     print('Saved frame%d.jpg' % count)
     count += 1
-
+    print(count)
 vidcap.release()
