@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-__author__ = 'Seran'
-
 import cv2
 
 #image capture class
 
-vidcap = cv2.VideoCapture('../movie/test.mp4')
+vidcap = cv2.VideoCapture('../test_data/demo.mp4')
 
 count = 0
 
