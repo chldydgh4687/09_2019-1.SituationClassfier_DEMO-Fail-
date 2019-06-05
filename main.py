@@ -4,7 +4,7 @@ import cv2
 #image capture class
 print("1")
 vidcap = cv2.VideoCapture('/test_data/demo.mp4')
-
+print("video")
 count = 0
 
 while(vidcap.isOpened()):
