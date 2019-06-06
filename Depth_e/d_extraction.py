@@ -12,16 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
 import torch
 from options.train_options import TrainOptions
 from loaders import aligned_data_loader
 from models import pix2pix_model
+        
 
 BATCH_SIZE = 1
 
 opt = TrainOptions().pars()
 
-video_list = 'test_data/test_video_set.txt'
+video_list = './images/data_list.txt'
 
 eval_num_threads = 2
 video_data_loader = aligned_data_loader.demoDataLoader(video_list, BATCH_SIZE)
