@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+import os
 import numpy as np
 import torch
 import torch.nn as nn
@@ -90,7 +90,10 @@ class Pix2PixModel(base_model.BaseModel):
             )
 
             if not _isTrain:
-                print(os.getchwd())
+                print(os.path.dirname( os.path.abspath( __file__ ) ))
+               # print(os.getcwd()+"\n")
+               # os.chdir(os.getcwd()+)
+               # print("changed path to"+os.getcwd()+"\n")
                 
                 if self.num_input == 7:
                     model_parameters = self.load_network(
