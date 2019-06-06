@@ -12,7 +12,7 @@ VTP.video_to_picture('./test_data/demo.mp4','./images')
 
 ###########################################################
 
-autolist()
+
 
 ##
 ##def test():
