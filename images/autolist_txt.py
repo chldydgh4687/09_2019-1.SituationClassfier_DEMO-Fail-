@@ -16,6 +16,6 @@ def autolist():
         f.write(data)
         count=count+1
     f.close()
-    print(count + "find .jpg files\n") 
+    print(count," found .jpg files\n") 
     print("--------------Wrtiting Success------------")
     
