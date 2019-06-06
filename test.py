@@ -3,13 +3,13 @@ import sys
 import os.path
 import numpy as np
 from read_write import VTP
-print("1234")
-#from Depth_e import test_davis_videos
-print("1234")
+
+#from Depth_e import test_davis_videos0
+
 from images import autolist_txt
 
 #TEST VIDEO OPEN& JPG WRITE
-print("1234")
+
 VTP.video_to_picture('./test_data/demo.mp4','./images')
 
 ###########################################################
