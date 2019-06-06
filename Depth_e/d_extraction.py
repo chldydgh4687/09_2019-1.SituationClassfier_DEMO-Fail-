@@ -14,7 +14,7 @@
 
 import os
 import torch
-import train_options.TrainOptions
+from Depth_d.train_options import TrainOptions
 from loaders import aligned_data_loader
 from models import pix2pix_model
         
