@@ -61,7 +61,7 @@ class HourglassVariant(torch.nn.Module):
 
 
 class Pix2PixModel(base_model.BaseModel):
-
+   
     def name(self):
         return 'Pix2PixModel'
 
@@ -90,6 +90,8 @@ class Pix2PixModel(base_model.BaseModel):
             )
 
             if not _isTrain:
+                print(os.getchwd())
+                
                 if self.num_input == 7:
                     model_parameters = self.load_network(
                         new_model, 'G', 'best_depth_Ours_Bilinear_inc_7')
