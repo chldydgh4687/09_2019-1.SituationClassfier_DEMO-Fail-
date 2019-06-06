@@ -15,6 +15,7 @@
 import os
 import torch
 
+
 class BaseModel():
     def name(self):
         return 'BaseModel'
@@ -66,9 +67,7 @@ class BaseModel():
         print(save_path)
         model = torch.load(save_path)
         return model
-
-    def update_learning_rate():
-        pass
+        # network.load_state_dict(torch.load(save_path))
 
     def update_learning_rate():
         pass

@@ -14,7 +14,7 @@
 
 import argparse
 import os
-import util
+from util import util
 
 
 class BaseOptions():
