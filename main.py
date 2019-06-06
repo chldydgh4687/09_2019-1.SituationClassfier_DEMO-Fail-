@@ -1,13 +1,9 @@
-# -*- coding: utf-8 -*-
-import argparse
-import cv2
+import os
+import sys
+import os.path
+import numpy as np
+from read_write import VTP
 
-vidcap = cv2.VideoCapture('./test_data/demo.mp4')
-success,image = vidcap.read()
-count = 0;
-while success:
-    success,image = vidcap.read()
-    cv2.imwrite("./images/frame%d.jpg"% count, image)     # save frame as JPEG file
-    if cv2.waitKey(50) == 27:                     # exit if Escape is hit
-        break
-    count += 1
+#VIDEO OPEN& JPG WRITE
+
+VTP.video_to_picture('./test_data/demo.mp4','./images')
