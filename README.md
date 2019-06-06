@@ -5,7 +5,7 @@
 ### Pipeline_design#1 목표
 - ~~실시간 서비스를 대비할 비디오 -> 사진 추출 함수를 구현한다.  (OpenCV)~~
 - ~~프로그램을 돌릴 main 파일 일부를 구현한다.~~
-- Depth_Estimation 변수 및 필요없는 소스 코드 파일 재구성한다.
+- ~~Depth_Estimation 변수 및 필요없는 소스 코드 파일 재구성한다.~~ (수정은 완료 / 삭제는 보류 )
 - Disparity 파일이 제대로 추출되는지 DEMO 영상을 넣어 돌려본다. 
 
 - 실시간으로 돌릴시 참고되는 코드링크 : https://m.blog.naver.com/PostView.nhn?blogId=samsjang&logNo=220500854338&proxyReferer=https%3A%2F%2Fwww.google.com%2F
