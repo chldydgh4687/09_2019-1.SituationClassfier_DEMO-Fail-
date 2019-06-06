@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import torch
-from Depth_e.options import train_options 
-from loaders import aligned_data_loader
-from models import pix2pix_model
+from .options import train_options 
+from .loaders import aligned_data_loader
+from .models import pix2pix_model
 
 BATCH_SIZE = 1
 
