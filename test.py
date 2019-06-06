@@ -3,7 +3,7 @@ import sys
 import os.path
 import numpy as np
 from read_write import VTP
-#from Depth_e import test_davis_videos
+from Depth_e import test_davis_videos
 from images import autolist_txt
 
 #TEST VIDEO OPEN& JPG WRITE
@@ -18,8 +18,9 @@ autolist_txt.autolist()
 
 ###########################################################
 
+print('========== making Depth =================\n")
 print(os.getcwd())
-td_Depth()
+test_davis_videos.td_Depth()
 
 ##
 ##def test():
