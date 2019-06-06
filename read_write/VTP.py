@@ -8,7 +8,7 @@ def video_to_picture(op,wp):
     count = 0;
     while success:
         success,image = vidcap.read()
-        if count % 30 == 0:
+        if count % 20 == 0:
             cv2.imwrite(wp+"/frame%05d.jpg"% count, image)
             print("frame%d.jpg extract success"% count)
         # save frame as JPEG file
