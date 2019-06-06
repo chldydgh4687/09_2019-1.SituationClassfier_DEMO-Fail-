@@ -4,7 +4,7 @@ import os.path
 import numpy as np
 from read_write import VTP
 
-#VIDEO OPEN& JPG WRITE
+#TEST VIDEO OPEN& JPG WRITE
 
 VTP.video_to_picture('./test_data/demo.mp4','./images')
 
@@ -29,4 +29,4 @@ VTP.video_to_picture('./test_data/demo.mp4','./images')
 ##print("Label: ", sess.run(tf.argmax(mnist.test.labels[r:r + 1], 1)))
 ##print("Prediction: ", sess.run(
 ##    tf.argmax(logits, 1), feed_dict={X: resize_batch(mnist.test.images[r:r + 1]), keep_prob: 1}))
-, keep_prob: 1}))
+
