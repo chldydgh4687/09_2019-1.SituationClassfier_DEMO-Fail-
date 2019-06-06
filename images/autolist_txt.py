@@ -11,7 +11,7 @@ def autolist():
     #change path
     print(os.getcwd()+"\n")
     os.chdir(os.getcwd()+'/images')
-    print("changed path to "+os.getcwd()"\n")
+    print("changed path to"+os.getcwd()+"\n")
     
     for i in glob.iglob('*.jpg'):
         data = folder + "/" + i + "\n"
