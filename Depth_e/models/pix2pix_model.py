@@ -17,13 +17,13 @@ import torch
 import torch.nn as nn
 import torch.autograd as autograd
 import os
-from .models import base_model
-from .models import networks
+from . import base_model
+from . import networks
 import sys
 import h5py
 import os.path
 from skimage.io import imsave
-from .models import hourglass
+from . import hourglass
 
 import torchvision.utils as vutils
 
