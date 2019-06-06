@@ -8,10 +8,11 @@ def video_to_picture(op,wp):
     count = 0;
     while success:
         success,image = vidcap.read()
-        cv2.imwrite(wp+"/frame%d.jpg"% count, image)
-        print("frame%d.jpg extract success"% count)
+        if count % 30 == 0:
+            cv2.imwrite(wp+"/frame%05d.jpg"% count, image)
+            print("frame%d.jpg extract success"% count)
         # save frame as JPEG file
-        if cv2.waitKey(50) == 27:
+        if cv2.waitKey(10) == 27:
             # exit if Escape is hit
             break
         count += 1
