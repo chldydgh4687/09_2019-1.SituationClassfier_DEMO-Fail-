@@ -12,6 +12,7 @@
 #### colab에서 돌리기
 ~~~
 !git clone https://github.com/chldydgh4687/SituationClassfier_DEMO.git
+cd SituationClassfier_DEMO
 !python [파일이름].py --input [입력 변수]
 ~~~
 
