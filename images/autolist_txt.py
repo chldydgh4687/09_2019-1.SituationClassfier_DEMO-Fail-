@@ -3,6 +3,7 @@ import glob
 import os
 
 def autolist():
+    print("23")
     f = open(os.getcwd()+'data_list.txt','w')
     folder=basename('./SituationClassfier_DEMO/images')
     for i in glob.iglob('*.jpg'):
