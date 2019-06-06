@@ -8,8 +8,8 @@ def autolist():
     folder=basename('/SituationClassfier_DEMO/images')
     print(basename('./SituationClassfier_DEMO/images'))
     for i in glob.iglob('*.jpg'):
-        print("1")
         data = folder + "/" + i + "\n"
+        print(data)
         f.write(data)
     f.close()
 
