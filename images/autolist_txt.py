@@ -9,7 +9,7 @@ def autolist():
     count = 0
 
     #change path
-    print(os.getcwd()"\n")
+    print(os.getcwd()+"\n")
     os.chdir(os.getcwd()+'/images')
     print("changed path to "+os.getcwd()"\n")
     
