@@ -18,7 +18,7 @@ from .models import pix2pix_model
 
 BATCH_SIZE = 1
 
-opt = TrainOptions().parse()  # set CUDA_VISIBLE_DEVICES before import torch
+opt = train_options.TrainOptions().parse()  # set CUDA_VISIBLE_DEVICES before import torch
 
 video_list = 'test_data/test_davis_video_list.txt'
 
