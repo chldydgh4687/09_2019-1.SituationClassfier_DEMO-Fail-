@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import torch
-from options.train_options import TrainOptions
+import lib.train_options 
 from loaders import aligned_data_loader
 from models import pix2pix_model
 
