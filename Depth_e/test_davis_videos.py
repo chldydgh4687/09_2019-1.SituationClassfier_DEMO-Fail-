@@ -11,9 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 import torch
-import lib.train_options 
+import Depth_e.options import train_options 
 from loaders import aligned_data_loader
 from models import pix2pix_model
 
