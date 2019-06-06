@@ -10,17 +10,20 @@ from images import autolist_txt
 
 print("==========Extracting VIDEO >>>> FRAME ===========\n")
 VTP.video_to_picture('./test_data/demo.mp4','./images')
+print("\n")
 
 ###########################################################
 
 print("========== auto data_list.txt ===========\n")
 autolist_txt.autolist()
+print("\n")
 
 ###########################################################
 
 print("========== making Depth =================\n")
 print(os.getcwd())
 test_davis_videos.td_Depth()
+print("\n")
 
 ##
 ##def test():
