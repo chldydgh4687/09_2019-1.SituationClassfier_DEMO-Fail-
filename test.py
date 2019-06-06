@@ -3,18 +3,23 @@ import sys
 import os.path
 import numpy as np
 from read_write import VTP
-
-#from Depth_e import test_davis_videos0
-
+#from Depth_e import test_davis_videos
 from images import autolist_txt
 
 #TEST VIDEO OPEN& JPG WRITE
 
+print("==========Extracting VIDEO >>>> FRAME ===========\n")
 VTP.video_to_picture('./test_data/demo.mp4','./images')
 
 ###########################################################
 
+print("========== auto data_list.txt ===========\n")
 autolist_txt.autolist()
+
+###########################################################
+
+print(os.getcwd())
+td_Depth()
 
 ##
 ##def test():
