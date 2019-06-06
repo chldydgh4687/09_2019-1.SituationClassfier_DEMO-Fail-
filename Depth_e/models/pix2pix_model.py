@@ -91,9 +91,6 @@ class Pix2PixModel(base_model.BaseModel):
 
             if not _isTrain:
 
-                os.chdir(os.path.dirname( os.path.abspath( __file__ ) ))
-                print("changed path to"+os.getcwd()+"\n")
-                
                 if self.num_input == 7:
                     model_parameters = self.load_network(
                         new_model, 'G', 'best_depth_Ours_Bilinear_inc_7')
