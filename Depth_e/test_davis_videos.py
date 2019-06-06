@@ -30,7 +30,7 @@ def td_Depth():
     print('========================= Video dataset #images = %d =========' %
           len(video_data_loader))
     model = pix2pix_model.Pix2PixModel(opt)
-    
+    print("nework s")
     torch.backends.cudnn.enabled = True
     torch.backends.cudnn.benchmark = True
     best_epoch = 0
