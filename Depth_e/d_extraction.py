@@ -14,8 +14,9 @@
 
 import os
 import torch
-
-from models import pix2pix_model
+import train_options 
+import aligned_data_loader
+import pix2pix_model
         
 #from Depth_e import TrainOptions move options to Depth_e folder
 

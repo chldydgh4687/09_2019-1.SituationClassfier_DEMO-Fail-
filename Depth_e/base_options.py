@@ -14,7 +14,7 @@
 
 import argparse
 import os
-from Depth_d import util
+import util
 
 
 class BaseOptions():
