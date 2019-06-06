@@ -1,9 +1,10 @@
 from os.path import *
 import glob
+import os
 
 def autolist():
-    f = open('./SituationClassfier_DEMO/data_list.txt','w')
-    folder=basename('C:/Users/user/Desktop/autopath_txt/image')
+    f = open(os.getcwd()+'data_list.txt','w')
+    folder=basename('./SituationClassfier_DEMO/images')
     for i in glob.iglob('*.jpg'):
         data = a+"/"+i+"\n"
         f.write(data)
