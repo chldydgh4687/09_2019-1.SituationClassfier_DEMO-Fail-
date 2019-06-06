@@ -4,7 +4,7 @@ import os
 
 def autolist():
     
-    f = open(os.getcwd()+'/data_list.txt','w')
+    f = open(os.getcwd()+'/images/data_list.txt','w')
     folder=basename('/SituationClassfier_DEMO/images')
     print(basename('./SituationClassfier_DEMO/images'))
     print("1")
