@@ -65,6 +65,7 @@ class BaseModel():
         print(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.abspath(__file__))]))
         os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.abspath(__file__))]))
         os.chdir(os.getcwd()+"/Depth_d")
+        print(os.getcwd())
         save_filename = '%s_net_%s.pth' % (epoch_label, network_label)
         save_path = os.path.join(self.save_dir, save_filename)
        
