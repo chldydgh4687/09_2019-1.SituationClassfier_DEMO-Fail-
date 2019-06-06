@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import torch.utils.data
-import image_folder
+from loader import image_folder
 
 
 class DAVISDataLoader():
