@@ -14,10 +14,11 @@
 
 import os
 import torch
-from options.train_options import TrainOptions
+from Depth_e import TrainOptions
 from loaders import aligned_data_loader
 from models import pix2pix_model
         
+#from Depth_e import TrainOptions move options to Depth_e folder
 
 BATCH_SIZE = 1
 
