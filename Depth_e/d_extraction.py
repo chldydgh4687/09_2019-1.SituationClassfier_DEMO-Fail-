@@ -14,7 +14,7 @@
 
 import os
 import torch
-from train_options import TrainOptions
+import train_options.TrainOptions
 from loaders import aligned_data_loader
 from models import pix2pix_model
         
