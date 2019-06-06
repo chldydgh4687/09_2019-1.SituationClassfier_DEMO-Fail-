@@ -90,7 +90,7 @@ class Pix2PixModel(base_model.BaseModel):
             )
 
             if not _isTrain:
-                print(os.path.dirname( os.path.abspath( __file__ ) ))
+
                 os.chdir(os.path.dirname( os.path.abspath( __file__ ) ))
                 print("changed path to"+os.getcwd()+"\n")
                 
