@@ -14,7 +14,7 @@ def autolist():
     print("changed path to"+os.getcwd()+"\n")
     
     for i in glob.iglob('*.jpg'):
-        data = folder + "/" + i + "\n"
+        data = i + "\n"
         f.write(data)
         count=count+1
     f.close()

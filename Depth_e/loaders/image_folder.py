@@ -259,7 +259,6 @@ class DAVISImageFolder(data.Dataset):
         self.use_pp = True
 
     def load_imgs(self, img_path):
-        print(os.getcwd())
         img = imread(img_path)
         img = np.float32(img)/255.0
         img = transform.resize(img, (self.resized_height, self.resized_width))
