@@ -4,6 +4,7 @@ import os.path
 import numpy as np
 from read_write import VTP
 from Depth_e import test_davis_videos
+from Object_d import detection
 from images import autolist_txt
 
 #TEST VIDEO OPEN& JPG WRITE
@@ -24,6 +25,11 @@ print("========== making Depth =================\n")
 test_davis_videos.td_Depth()
 print("\n")
 
+###########################################################
+
+print("=========== Detecting Object ==============\n")
+detection.detection()
+print("\n")
 ##
 ##def test():
 ##    # Test model and check accuracy
