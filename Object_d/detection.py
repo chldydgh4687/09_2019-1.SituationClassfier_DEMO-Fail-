@@ -18,6 +18,3 @@ def detection():
   ##  cv2.imshow('original',rgbimg)
   ##colab have not x-server, so ipython used
     
-    
-    cv2.waitkey(0)
-    cv2.destroyAllWindows()
