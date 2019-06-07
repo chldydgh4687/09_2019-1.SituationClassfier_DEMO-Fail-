@@ -638,7 +638,7 @@ class Pix2PixModel(base_model.BaseModel):
 
             output_path = youtube_dir + '/' + \
                 targets['img_1_path'][i].split('/')[-1]
-            
+            print(output_path)
             disparity = 1. / pred_d_ref
             disparity = disparity / np.max(disparity)
             disparity = np.tile(np.expand_dims(disparity, axis=-1), (1, 1, 3))
