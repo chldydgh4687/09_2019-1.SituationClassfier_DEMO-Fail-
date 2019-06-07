@@ -9,7 +9,5 @@ def detection():
 
 ## SSD
     
-    npath=os.path.commonprefix(os.getcwd(),os.path.dirname(os.path.realpath(__file__)))
-    os.chdir(npath)
-    print(npath)
+    os.chdir(os.path.commonprefix(os.getcwd(),os.path.dirname(os.path.realpath(__file__))))
     rgbimg = cv2.imread('images/frame00000.jpg')
