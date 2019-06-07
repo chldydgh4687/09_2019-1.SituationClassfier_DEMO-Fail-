@@ -10,4 +10,4 @@ def detection():
 ## SSD
     
     print(os.getcwd())
-    rgbimg = 1
+    rgbimg = cv2.imread('./images/frame00000.jpg')
