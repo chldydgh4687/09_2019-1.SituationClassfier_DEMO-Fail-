@@ -22,7 +22,7 @@ def td_Depth():
     opt = train_options.TrainOptions().parse()  # set CUDA_VISIBLE_DEVICES before import torch
 
     video_list = os.getcwd()+'/data_list.txt'
-    print("os.getcwd()+'/data_list.txt")
+    print(os.getcwd()+'/data_list.txt')
 
     eval_num_threads = 2
     video_data_loader = aligned_data_loader.DAVISDataLoader(video_list, BATCH_SIZE)
