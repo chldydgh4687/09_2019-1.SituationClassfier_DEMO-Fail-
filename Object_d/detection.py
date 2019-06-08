@@ -15,7 +15,7 @@ def detection():
     print(os.getcwd())
     img = cv2.imread('frame00000.jpg')
     print(img)
-    plt.figure(figsize=(18,18))
+    plt.figure(figsize=(1800,1800))
     plt.imshow(img)
     plt.axis('off')
     plt.show()
