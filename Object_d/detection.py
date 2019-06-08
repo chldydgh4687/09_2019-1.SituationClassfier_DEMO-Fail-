@@ -15,7 +15,8 @@ def detection():
     print(os.getcwd())
     
     rgbimg=cv2.imread('frame00000.jpg',cv2.IMREAD_UNCHANGED)
-    cv2_imshow(rgbimg)
+    resized = cv2.resize(rgbimg,(256,256))
+    cv2_imshow(resized)
     
   ##  cv2.imshow('original',rgbimg)
   ##colab have not x-server, so ipython used
