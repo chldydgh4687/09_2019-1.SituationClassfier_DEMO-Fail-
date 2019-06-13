@@ -28,8 +28,28 @@ print("\n")
 ###########################################################
 
 print("=========== Detecting Object ==============\n")
-detection.detection()
+p1,p2,p3 = detection.detection()  ### object dot
+
+print("=============== Success =====================\n")
+
+#######################################################################
+
+print("================ Distance Estimation ==================\n")
+
+detection.movetoDep(p1,p2,p3)
+test_davis_videos.D_mpointbox()
+test_davis_videos.D_mpoint()
+## accuracy upgrading : algorithm of depth dot by using reference before frame
+
+print("================ Successs ===============================\n")
+
+##########################################################################
+
+print("================ Road_Detection Readying.. ======================\n")
+
 print("\n")
+
+
 ##
 ##def test():
 ##    # Test model and check accuracy
