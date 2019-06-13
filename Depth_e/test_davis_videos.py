@@ -52,5 +52,5 @@ def td_Depth():
         
 def D_mpointbox(rect, rect2):
     print(os.getcwd())
-    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"/images/viz_predictions")
+    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"images/viz_predictions")
     print(os.getcwd())
