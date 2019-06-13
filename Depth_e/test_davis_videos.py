@@ -56,7 +56,7 @@ def D_mpointbox(rect, rect2):
     img = cv2.imread('frame00020.jpg')
     cv2.rectangle(img,(220,0),(320,300), (255,0,0), 3)
 
-     cv2.imwrite('t_frame00020.jpg',img)
+    cv2.imwrite('t_frame00020.jpg',img)
     
     img = cv2.imread('frame00040.jpg')
     cv2.rectangle(img,(rect[0],rect[1]),(rect[2],rect[3]), (255,0,0), 3)
