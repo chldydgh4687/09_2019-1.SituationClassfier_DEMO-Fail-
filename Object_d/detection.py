@@ -43,7 +43,7 @@ def de_box(p1,p2,p3):
     p2_d = [p2[0]+((p2[2]-p2[0])/2),p2[1]+((p2[3]-p2[1])/2)]
     p3_d = [p3[0]+((p3[2]-p3[0])/2),p3[1]+((p3[3]-p3[1])/2)]
     
-    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"/viz_predictions/images")
+    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
     # p1_d = [x.y] to rectangle 
     img = cv2.imread('frame00020.jpg')
     cv2.circle(img,(p1_d[0],p1_d[1]),3, (255,0,0), -1)
