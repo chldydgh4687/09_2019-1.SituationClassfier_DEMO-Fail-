@@ -77,9 +77,9 @@ def D_mpoint(rect,rect2):
     cv2.imwrite('m_frame00020.jpg',img)
 
     img = cv2.imread('frame00040.jpg')
-    cv2.circle(img,(rect[0]+(rect[2]-rect[0])/2,rect[1]+(rect[2]-rect[1])/2),1,(255,0,0),-1)
+    cv2.circle(img,((int)(rect[0]+(rect[2]-rect[0])/2),(int)(rect[1]+(rect[2]-rect[1])/2)),1,(255,0,0),-1)
     cv2.imwrite('m_frame00040.jpg',img)
 
     img = cv2.imread('frame00060.jpg')
-    cv2.circle(img,(rect2[0]+(rect2[2]-rect2[0])/2,rect2[1]+(rect2[2]-rect2[1])/2),1,(255,0,0),-1)
+    cv2.circle(img,((int)(rect2[0]+(rect2[2]-rect2[0])/2),(int)(rect2[1]+(rect2[2]-rect2[1])/2)),1,(255,0,0),-1)
     cv2.imwrite('m_frame00060.jpg',img)
