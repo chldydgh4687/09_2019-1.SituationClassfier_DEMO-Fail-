@@ -32,8 +32,9 @@ def detection():
     
     xy2 =([10,0,280,480])  ##extraction x1y1,x2y2 dot
     
-    cv2.imwrite('t_frame00060.jpg',img) ## Saving detected picture 
-return xy, xy1, xy2
+    cv2.imwrite('t_frame00060.jpg',img) ## Saving detected picture
+
+    return xy, xy1, xy2
 
 def movetoDep(p1,p2,p3):
 
@@ -67,7 +68,7 @@ def movetoDep(p1,p2,p3):
   rect2[1] = max(p2[1],p3[1])
   rect2[2] = min(p2[0]+p2[2],p3[0]+p3[2])-rect2[0]
   rect2[3] = min(p2[1]+p2[3],p3[1]+p3[3])-rect2[1]
-  
+
   return rect, rect2
 
 ### 일단 수동적임을 말씀드립니다...추후 recursive 로 짤생각..
