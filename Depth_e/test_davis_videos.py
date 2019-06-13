@@ -51,6 +51,22 @@ def td_Depth():
         model.run_and_save_DAVIS(stacked_img, targets, save_path)
         
 def D_mpointbox(rect, rect2):
-    print(os.getcwd())
     os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
-    print(os.getcwd())
+    print('this path :'+os.getcwd())
+    img = cv2.imread('frame00020.jpg')
+    cv2.rectangle(img,(220,0),(320,300), (255,0,0), 3)
+
+     cv2.imwrite('t_frame00020.jpg',img)
+    
+    img = cv2.imread('frame00040.jpg')
+    cv2.rectangle(img,(rect[0],rect[1]),(rect[2],rect[3]), (255,0,0), 3)
+
+    cv2.imwrite('t_frame00040.jpg',img)  
+    
+    img = cv2.imread('frame00060.jpg')
+    cv2.rectangle(img,(rect2[0],rect2[1]),(rect2[2],rect2[3]), (255,0,0), 3)
+    
+    cv2.imwrite('t_frame00060.jpg',img)
+
+
+

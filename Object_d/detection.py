@@ -8,7 +8,6 @@ from matplotlib import pyplot as plt
 
 def detection():
 
-
 ## SSD
     
     os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"/images/")
