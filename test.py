@@ -36,9 +36,7 @@ print("=============== Success =====================\n")
 
 print("================ Distance Estimation ==================\n")
 
-rect, rect2 = detection.movetoDep(p1,p2,p3)
-test_davis_videos.D_mpointbox(rect,rect2)
-test_davis_videos.D_mpoint(rect,rect2)
+detection.de_box(p1,p2.p3)
 ## accuracy upgrading : algorithm of depth dot by using reference before frame
 
 print("================ Successs ===============================\n")
