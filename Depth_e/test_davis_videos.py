@@ -71,7 +71,7 @@ def D_mpointbox(rect, rect2):
 
 def D_mpoint(rect,rect2):
     #rect=[x,y,w,h]
-    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
+    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"/viz_predictions/images")
     img = cv2.imread('frame00020.jpg')
     cv2.circle(img,(270,150),1, (255,0,0), -1)
     cv2.imwrite('m_frame00020.jpg',img)
