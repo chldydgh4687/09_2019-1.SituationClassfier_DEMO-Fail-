@@ -70,4 +70,4 @@ def movetoDep(p1,p2,p3):
   
   return rect, rect2
 
-### 일단 수동적임을 말씀드립니다...추후 재귀로 짤생각..
+### 일단 수동적임을 말씀드립니다...추후 recursive 로 짤생각..

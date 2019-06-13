@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import torch
+import cv2
 from .options import train_options 
 from .loaders import aligned_data_loader
 from .models import pix2pix_model
@@ -49,3 +50,8 @@ def td_Depth():
         targets = data[1]
         model.run_and_save_DAVIS(stacked_img, targets, save_path)
         
+def D_mpointbox(rect, rect2):
+    print(os.getcwd())
+    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"/images/viz_predictions")
+    print(os.getcwd())
+def D_mpoint():
