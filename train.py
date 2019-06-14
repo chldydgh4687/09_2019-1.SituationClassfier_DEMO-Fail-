@@ -31,7 +31,7 @@ for step in range(101):
 	cost_, hypo_, _ = sess.run([cost, hypothesis, train], feed_dict={X: x_data, Y: y_data})
 	if step % 100 == 0:
 		print("#",step, ":loss: ", cost_)
-		print("-À§Çèµµ: ",hypo_[0])
+		print("-danger: ",hypo_[0])
 
 
 print('-----------')
