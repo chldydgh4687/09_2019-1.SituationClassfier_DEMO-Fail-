@@ -76,6 +76,7 @@ def mse_prevent(dp1,dp2,dp3):
     block_s = 50 
     #cv2로 불러들인 img 좌표는 y, x 순
     s = img[i_dp1[1],i_dp1[0]]
+    print(s[0],' ',s[1],' ',s[2])
     e_s = (s[0]+s[1]+s[2])/3
 
     for i in range (0,block_s): # y축
@@ -84,15 +85,14 @@ def mse_prevent(dp1,dp2,dp3):
      
             p = img[i_dp1[1]+i,i_dp1[0]+k]
             e_p  = (p[0]+p[1]+p[2])/3
-            print('2',e_p)
-            print(p)
+            print(p[0],' ',p[1],' ',p[2])
 
             if(e_s < e_p):
-                print('eee')
+                
                 s_i,s_k = i,k
                 s = p
                 e_s = e_p
-                print(s)
+                
            
     print('max_xpoint',i_dp1[1]+s_i,'max_ypoint',i_dp1[0]+s_k)
     print(s)
