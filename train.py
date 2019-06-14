@@ -5,7 +5,7 @@ import numpy as np
 
 model = tf.global_variables_initializer()
 
-data = pandas.read_csv('Virtual_Data'.csv,header=None)
+data = pandas.read_csv('Virtual_Data.csv',sep=',')
 
 X = tf.placeholder(tf.float32, [None, 3])
 Y = tf.placeholder(tf.float32, [None, 1])
