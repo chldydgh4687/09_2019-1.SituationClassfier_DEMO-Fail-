@@ -56,7 +56,7 @@ def mse_prevent(P_list):
 
     print(os.getcwd())
     img = cv2.imread('frame00020.jpg')
-    print(img[2][4])
+    print(img)
 
 
 
