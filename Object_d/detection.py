@@ -68,18 +68,26 @@ def mse_prevent(dp1,dp2,dp3):
     print(os.getcwd())
 
     #dp1 = [x,y] middle point
-
     #initial_dp1
     i_dp1 = ([dp1[0]-25,dp1[1]-25])
     img = cv2.imread('frame00020.jpg')
 
+    dp1_max = []
     block_s = 50 
     #cv2로 불러들인 img 좌표는 y, x 순
+    s = img[i_dp1[1],i_dp1[0]]
 
     for i in range (0,block_s): # y축
         for k in range (0,block_s): # x 축
-            print('xpoint',i_dp1[1]+i,'ypoint',i_dp1[0]+k)
-            print(img[i_dp1[1]+i,i_dp1[0]]+k)
+            e_s = (s[0]+s[1]+s[2])/3
+            p = img[i_dp1[1]+i,i_dp1[0]+k]
+            e_p  = (p[0]+p[1]+p[2])/3
+            if(e_s < e_p):
+                s_i,s_k = i,k
+                s = p
+           
+    print('max_xpoint',i_dp1[1]+s_i,'max_ypoint',i_dp1[0]+s_k)
+    print(s)
 
 
 
