@@ -36,11 +36,10 @@ print("=============== Success =====================\n")
 
 print("================ Distance Estimation ==================\n")
 
-rect, rect2 = detection.movetoDep(p1,p2,p3)
-test_davis_videos.D_mpointbox(rect,rect2)
-test_davis_videos.D_mpoint(rect,rect2)
+rp1,rp2,rp3 = detection.de_ratio(p1,p2,p3)
+detection.mse_prevent(rp1,rp2,rp3)
 ## accuracy upgrading : algorithm of depth dot by using reference before frame
-
+ 
 print("================ Successs ===============================\n")
 
 ##########################################################################
@@ -66,4 +65,3 @@ print("\n")
 ##print("Label: ", sess.run(tf.argmax(mnist.test.labels[r:r + 1], 1)))
 ##print("Prediction: ", sess.run(
 ##    tf.argmax(logits, 1), feed_dict={X: resize_batch(mnist.test.images[r:r + 1]), keep_prob: 1}))
-

@@ -11,9 +11,9 @@
 - 실시간으로 돌릴시 참고되는 코드링크 : https://m.blog.naver.com/PostView.nhn?blogId=samsjang&logNo=220500854338&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 
 ### Pipeline_design#2 목표
-- SSD 가 구성됬다는 기준으로 대략적인 각 물체의 GT 박스 수동으로 좌표 배열을 주어 RGB와 DEPTH 픽쳐에 보내준다.
-- DEPTH 의 대략적인 평균값을 정하여 기준을 정한다.
-- ROAD_DETECTION 이 구성됬다는 으로 바닥의 GT를 박스 좌표 배열을 RGB에 보내준다.
+- ~~SSD 가 구성됬다는 기준으로 대략적인 각 물체의 GT 박스 수동으로 좌표 배열을 주어 RGB와 DEPTH 픽쳐에 보내준다.~~
+- ~~DEPTH 의 대략적인 평균값을 정하여 기준을 정한다.~~
+- ~~ROAD_DETECTION 이 구성됬다는 으로 바닥의 GT를 박스 좌표 배열을 RGB에 보내준다.~~
 
 ### Pipeline_design#3 목표
 - CLASSFICATION 의 기준을 세워 분류한다.
