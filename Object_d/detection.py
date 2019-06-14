@@ -42,9 +42,11 @@ def de_box(p1,p2,p3):
     p1_d = [(int)(p1[0]+((p1[2]-p1[0])/2)),(int)(p1[1]+((p1[3]-p1[1])/2))]
     p2_d = [(int)(p2[0]+((p2[2]-p2[0])/2)),(int)(p2[1]+((p2[3]-p2[1])/2))]
     p3_d = [(int)(p3[0]+((p3[2]-p3[0])/2)),(int)(p3[1]+((p3[3]-p3[1])/2))]
-    print(p1_d)
+    print(p1_d[0]*0.8,p1_d[1]*0.6)
     print(p2_d)
     print(p3_d)
+    ## 사진이 512x 288 로 변경됨. 비율 계산식이 필요 
+    ## 세로 비율 0.6, 가로 비율 0.8
 
     os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
     # p1_d = [x.y] to rectangle 
