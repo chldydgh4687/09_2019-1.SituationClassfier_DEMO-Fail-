@@ -644,7 +644,7 @@ class Pix2PixModel(base_model.BaseModel):
          #   saved_imgs = np.concatenate((saved_img, disparity), axis=1)
             saved_imgs = (disparity)
 
-            print(saved_imgs)
+           # print(saved_imgs)
             
             imsave(output_path, saved_imgs)
 
