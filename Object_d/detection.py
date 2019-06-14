@@ -51,7 +51,7 @@ def de_box(p1,p2,p3):
     os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
     # p1_d = [x.y] to rectangle 
     img = cv2.imread('frame00020.jpg')
-    cv2.circle(img,(p1_d[0],p1_d[1]),3, (255,0,0), -1)
+    cv2.circle(img,((int)(p1_d[0]*0.8),(int)(p1_d[1]*0.6)),3, (255,0,0), -1)
     cv2.imwrite('m_frame00020.jpg',img)
 
     img = cv2.imread('frame00040.jpg')
