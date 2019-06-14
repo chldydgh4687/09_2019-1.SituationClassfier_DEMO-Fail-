@@ -55,6 +55,7 @@ def de_box(p1,p2,p3):
 def mse_prevent(P_list):
 
     img = cv2.imread('frame00020.jpg')
+    print(img[2][4])
 
 
 
