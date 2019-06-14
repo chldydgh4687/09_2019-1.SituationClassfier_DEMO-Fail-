@@ -36,7 +36,8 @@ print("=============== Success =====================\n")
 
 print("================ Distance Estimation ==================\n")
 
-detection.de_box(p1,p2,p3)
+rp1,rp2,rp3 = detection.de_ratio(p1,p2,p3)
+detection.mse_prevent(dp1,dp2,dp3)
 ## accuracy upgrading : algorithm of depth dot by using reference before frame
 
 print("================ Successs ===============================\n")

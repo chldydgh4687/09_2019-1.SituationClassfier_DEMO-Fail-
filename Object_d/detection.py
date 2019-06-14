@@ -35,35 +35,18 @@ def detection():
 
     return xy, xy1, xy2
 
-def de_box(p1,p2,p3):
+def de_ratio(p1,p2,p3):
 
     # p = [x,y,w,h] to half dot  p1_d = [x,y]
 
     p1_d = [(int)(0.8*(p1[0]+((p1[2]-p1[0])/2))),(int)(0.6*(p1[1]+((p1[3]-p1[1])/2)))]
     p2_d = [(int)(0.8*(p2[0]+((p2[2]-p2[0])/2))),(int)(0.6*(p2[1]+((p2[3]-p2[1])/2)))]
     p3_d = [(int)(0.8*(p3[0]+((p3[2]-p3[0])/2))),(int)(0.6*(p3[1]+((p3[3]-p3[1])/2)))]
-
-    P_list = [p1_d,p2_d,p3_d]
     ## 사진이 512x 288 로 변경됨. 비율 계산식이 필요 
     ## 세로 비율 0.6, 가로 비율 0.8
 
-    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
-    # p1_d = [x.y] to rectangle 
-    
-    mse_prevent(P_list)
-
-def mse_prevent(P_list):
-
-    print(os.getcwd())
-    img = cv2.imread('frame00020.jpg')
-    print(img)
-
-
-
-
-
-    ##guide_line
-
+    #guide_line_box
+    #os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
     #img = cv2.imread('frame00020.jpg')
     #cv2.circle(img,(p1_d[0],p1_d[1]),3,(255,0,0),-1)
     #cv2.rectangle(img,(p1_d[0]-25,p1_d[1]-25),(p1_d[0]+25,p1_d[1]+25),(255,0,0),3)
@@ -76,6 +59,32 @@ def mse_prevent(P_list):
     #img = cv2.imread('frame00060.jpg')
     #cv2.circle(img,(p3_d[0],p3_d[1]),3,(255,0,0),-1)
     #cv2.imwrite('m_frame00060.jpg',img)
+
+    return p1_d, p2_d, p3_d
+
+def mse_prevent(dp1,dp2,dp3):
+
+    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
+    print(os.getcwd())
+
+    #dp1 = [x,y] middle point
+
+    #initial_dp1
+    i_dp1 = ([dp1[0]-25,dp1[1]-25])
+    img = cv2.imread('frame00020.jpg')
+
+    block_s = 50 
+    #cv2로 불러들인 img 좌표는 y, x 순
+
+    for i in range (0,block_s): # y축
+        for k in range (0,block_s): # x 축
+            print('xpoint',i_dp1[1]+i,'ypoint',i_dp1[0]+k)
+            print(img[i_dp1[1]+i,i_dp1[0]]+k)
+
+
+
+
+
 
 
 ### 일단 수동적임을 말씀드립니다...추후 recursive 로 짤생각..
