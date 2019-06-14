@@ -76,7 +76,6 @@ def mse_prevent(dp1,dp2,dp3):
     block_s = 50 
     #cv2로 불러들인 img 좌표는 y, x 순
     s = img[i_dp1[1],i_dp1[0]]
-    print(s[0],' ',s[1],' ',s[2])
     e_s = sum(s,0.0)/len(s)
 
     for i in range (0,block_s): # y축
@@ -93,7 +92,64 @@ def mse_prevent(dp1,dp2,dp3):
     print(s)
 
     #confirm
-    cv2.circle(img,(i_dp1[0]+s_k,i_dp1[1]+s_i),3,(255,0,0),-1)
+    cv2.circle(img,(i_dp1[0]+s_k,i_dp1[1]+s_i),2,(255,0,0),-1)
     cv2.imwrite('m_frame00020.jpg',img)
+
+
+    #dp2
+    i_dp2 = ([dp2[0]-25,dp2[1]-25])
+    img = cv2.imread('frame00040.jpg')
+
+    dp1_max = []
+    block_s = 50 
+    #cv2로 불러들인 img 좌표는 y, x 순
+    s = img[i_dp2[1],i_dp2[0]]
+    e_s = sum(s,0.0)/len(s)
+
+    for i in range (0,block_s): # y축
+        for k in range (0,block_s): # x 축
+
+            p = img[i_dp2[1]+i,i_dp2[0]+k]
+            e_p = sum(p,0.0)/len(p)
+            if(e_s < e_p):
+                s_i,s_k = i,k
+                s = p
+                e_s = e_p
+
+    print('max_xpoint',i_dp2[1]+s_i,'max_ypoint',i_dp2[0]+s_k)
+    print(s)
+
+    #confirm
+    cv2.circle(img,(i_dp2[0]+s_k,i_dp2[1]+s_i),2,(255,0,0),-1)
+    cv2.imwrite('m_frame00040.jpg',img)
+
+
+
+    #dp3
+    i_dp3 = ([dp3[0]-25,dp3[1]-25])
+    img = cv2.imread('frame00060.jpg')
+
+    dp1_max = []
+    block_s = 50 
+    #cv2로 불러들인 img 좌표는 y, x 순
+    s = img[i_dp3[1],i_dp3[0]]
+    e_s = sum(s,0.0)/len(s)
+
+    for i in range (0,block_s): # y축
+        for k in range (0,block_s): # x 축
+
+            p = img[i_dp1[1]+i,i_dp1[0]+k]
+            e_p = sum(p,0.0)/len(p)
+            if(e_s < e_p):
+                s_i,s_k = i,k
+                s = p
+                e_s = e_p
+
+    print('max_xpoint',i_dp3[1]+s_i,'max_ypoint',i_dp3[0]+s_k)
+    print(s)
+
+    #confirm
+    cv2.circle(img,(i_dp3[0]+s_k,i_dp3[1]+s_i),2,(255,0,0),-1)
+    cv2.imwrite('m_frame00060.jpg',img)
 
 ### 일단 수동적임을 말씀드립니다...추후 recursive 로 짤생각..
