@@ -84,9 +84,6 @@ def mse_prevent(dp1,dp2,dp3):
 
             p = img[i_dp1[1]+i,i_dp1[0]+k]
             e_p = sum(p,0.0)/len(p)
-
-            print(p[0],' ',p[1],' ',p[2])
-            print(e_p)
             if(e_s < e_p):
                 s_i,s_k = i,k
                 s = p
@@ -94,5 +91,9 @@ def mse_prevent(dp1,dp2,dp3):
 
     print('max_xpoint',i_dp1[1]+s_i,'max_ypoint',i_dp1[0]+s_k)
     print(s)
+
+    #confirm
+    cv2.circle(img,(i_dp1[0]+s_k,i_dp1[1]+s_i),3,(255,0,0),-1)
+    cv2.imwrite('m_frame00020.jpg',img)
 
 ### 일단 수동적임을 말씀드립니다...추후 recursive 로 짤생각..
