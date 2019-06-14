@@ -82,6 +82,7 @@ def mse_prevent(dp1,dp2,dp3):
             e_s = (s[0]+s[1]+s[2])/3
             p = img[i_dp1[1]+i,i_dp1[0]+k]
             e_p  = (p[0]+p[1]+p[2])/3
+            print(p)
             if(e_s < e_p):
                 s_i,s_k = i,k
                 s = p
