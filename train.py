@@ -24,7 +24,7 @@ sess.run(tf.global_variables_initiallizer())
 ##learn  
 
 print("------------")
-print(' 학습 시작 ')
+print(' learn start ')
 print("------------")
 
 for step in range(101):
@@ -35,5 +35,5 @@ for step in range(101):
 
 
 print('-----------')
-print('  학습 끝  ')
+print('  learn end  ')
 print('-----------')
