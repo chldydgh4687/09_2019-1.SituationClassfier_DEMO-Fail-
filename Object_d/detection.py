@@ -39,19 +39,17 @@ def de_box(p1,p2,p3):
 
     # p = [x,y,w,h] to half dot  p1_d = [x,y]
 
-    p1_d = [(int)(p1[0]+((p1[2]-p1[0])/2)),(int)(p1[1]+((p1[3]-p1[1])/2))]
-    p2_d = [(int)(p2[0]+((p2[2]-p2[0])/2)),(int)(p2[1]+((p2[3]-p2[1])/2))]
-    p3_d = [(int)(p3[0]+((p3[2]-p3[0])/2)),(int)(p3[1]+((p3[3]-p3[1])/2))]
-    print(p1_d[0]*0.8,p1_d[1]*0.6)
-    print(p2_d)
-    print(p3_d)
+    p1_d = [(int)(0.8*(p1[0]+((p1[2]-p1[0])/2))),(int)(0.6*(p1[1]+((p1[3]-p1[1])/2)))]
+    p2_d = [(int)(0.8*(p2[0]+((p2[2]-p2[0])/2))),(int)(0.6*(p2[1]+((p2[3]-p2[1])/2)))]
+    p3_d = [(int)(0.8*(p3[0]+((p3[2]-p3[0])/2))),(int)(0.6*(p3[1]+((p3[3]-p3[1])/2)))]
+
     ## 사진이 512x 288 로 변경됨. 비율 계산식이 필요 
     ## 세로 비율 0.6, 가로 비율 0.8
 
     os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"Depth_e/viz_predictions/images")
     # p1_d = [x.y] to rectangle 
     img = cv2.imread('frame00020.jpg')
-    cv2.circle(img,((int)(p1_d[0]*0.8),(int)(p1_d[1]*0.6)),3, (255,0,0), -1)
+    cv2.circle(img,(p1_d[0],p1_d[1]),3,(255,0,0),-1)
     cv2.imwrite('m_frame00020.jpg',img)
 
     img = cv2.imread('frame00040.jpg')
