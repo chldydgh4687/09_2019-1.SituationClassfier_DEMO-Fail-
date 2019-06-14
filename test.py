@@ -65,4 +65,3 @@ print("\n")
 ##print("Label: ", sess.run(tf.argmax(mnist.test.labels[r:r + 1], 1)))
 ##print("Prediction: ", sess.run(
 ##    tf.argmax(logits, 1), feed_dict={X: resize_batch(mnist.test.images[r:r + 1]), keep_prob: 1}))
-

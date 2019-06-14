@@ -88,19 +88,11 @@ def mse_prevent(dp1,dp2,dp3):
             print(p[0],' ',p[1],' ',p[2])
 
             if(e_s < e_p):
-                
                 s_i,s_k = i,k
                 s = p
                 e_s = e_p
-                
            
     print('max_xpoint',i_dp1[1]+s_i,'max_ypoint',i_dp1[0]+s_k)
     print(s)
-
-
-
-
-
-
 
 ### 일단 수동적임을 말씀드립니다...추후 recursive 로 짤생각..
