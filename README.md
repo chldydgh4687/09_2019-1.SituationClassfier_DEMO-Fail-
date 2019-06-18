@@ -15,7 +15,7 @@
 - ~~DEPTH 의 대략적인 평균값을 정하여 기준을 정한다.~~
 - ~~ROAD_DETECTION 이 구성됬다는 으로 바닥의 GT를 박스 좌표 배열을 RGB에 보내준다.~~
 
-~~### Pipeline_design#3 목표
+### Pipeline_design#3 목표
 - CLASSFICATION 의 기준을 세워 분류한다.
 - 이의 위험도를 색깔로 표현
 
