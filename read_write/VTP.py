@@ -12,10 +12,10 @@ def video_to_picture(op,wp):
             cv2.imwrite(wp+"/frame%05d.jpg"% count, image)
             print("frame%05d.jpg extract success"% count)
         # save frame as JPEG file
-        if cv2.waitKey(10) == 27:
+        if cv2.waitKey(10) == 10:
             # exit if Escape is hit
             break
-        count +=0.1
+        count += 1
 
 
 #when we are possible real time, we must find new code.. 
