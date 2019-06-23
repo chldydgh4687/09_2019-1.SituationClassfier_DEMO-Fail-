@@ -10,7 +10,7 @@ from images import autolist_txt
 #TEST VIDEO OPEN& JPG WRITE
 
 print("==========Extracting VIDEO >>>> FRAME ===========\n")
-VTP.video_to_picture('./test_data/demo.mp4','./images')
+VTP.video_to_picture('./test_data/demo.avi','./images')
 print("\n")
 
 ###########################################################
