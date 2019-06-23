@@ -1,4 +1,5 @@
 import os
+import cv2
 import sys
 import os.path
 import numpy as np
@@ -25,6 +26,22 @@ print("========== making Depth =================\n")
 print(os.getcwd())
 test_davis_videos.td_Depth()
 print("\n")
+
+image_folder = (os.getcwd())
+video_name = 'd_demo.avi'
+
+#이미지 파일형식 지정
+images = [img for img in os.listdir(image_folder) if img.endswith(".jpg")]
+frame = cv2.imread(os.path.join(image_folder, images[0]))
+height, width, layers = frame.shape
+
+#VideoWriter(video_name, 0, 프레임, (width,height)
+video = cv2.VideoWriter(video_name, 0, 1, (width,height))
+
+for image in images:
+    video.write(cv2.imread(os.path.join(image_folder, image)))
+
+video.release()
 
 
 ###########################################################
