@@ -24,6 +24,7 @@ print("\n")
 print("========== making Depth =================\n")
 test_davis_videos.td_Depth()
 print("\n")
+print(os.getcwd())
 
 ###########################################################
 
