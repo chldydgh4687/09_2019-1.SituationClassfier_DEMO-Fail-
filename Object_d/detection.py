@@ -16,10 +16,9 @@ def detection(json_list):
     for i, data in enumerate(json_list):
         with open(data[i]) as json_file:
             json_data = json.load(json_file)
+            json = json_data["detection_boxes"]
+            print(json)
 
-        json = json_data["detection_boxes"]
-        for k, gt in enumerate(json):
-            print(gt[k])
 
 
 
