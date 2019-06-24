@@ -31,13 +31,9 @@ print("\n")
 ###########################################################
 
 print("=========== Detecting Object ==============\n")
+os.chdir('/content/SituationClassfier_DEMO')
 print(os.getcwd())
 print("\n")
-os.chdir('/')
-print(os.getcwd())
-print("\n")
-os.chdir(os.path.commonprefix([os.getcwd(), os.path.dirname(os.path.realpath(__file__))]))
-print(os.getcwd())
 
 autolist_txt.autolist_json()
 json_list=autolist_txt.json_loader()
