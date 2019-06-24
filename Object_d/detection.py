@@ -6,6 +6,7 @@ import cv2
 
 def detection():
 
+
 ## SSD
 
     print(os.getcwd())
@@ -14,7 +15,7 @@ def detection():
 
     #json_list = path 배열
     with open('frame01020.json') as json_file:
-        json_data = json.load(json_file)
+        json_data = json.dumps(json_file)
         json_string = json_data["detection_boxes"]
         print(json_string)
 
