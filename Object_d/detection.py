@@ -13,10 +13,10 @@ def detection():
 # i = iter, data = list
 
     #json_list = path 배열
-        with open('frame01020.json') as json_file:
-            json_data = json.load(json_file)
-            json_string = json_data["detection_boxes"]
-            print(json_string)
+    with open('frame01020.json') as json_file:
+        json_data = json.load(json_file)
+        json_string = json_data["detection_boxes"]
+        print(json_string)
 
 
 
