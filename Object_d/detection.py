@@ -9,10 +9,9 @@ import json
 def detection(json_list):
 
 ## SSD
-    
-    os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"/images/")
+
     print(os.getcwd())
-    json = []
+
 # i = iter, data = list
     for i, data in enumerate(json_list):
         with open(data[i]) as json_file:
