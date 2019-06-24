@@ -21,10 +21,6 @@ def detection(json_list):
 
 
 
-
-
-
-
     img = cv2.imread('frame00020.jpg')
     cv2.rectangle(img,(220,0),(320,300), (255,0,0), 3)
         
