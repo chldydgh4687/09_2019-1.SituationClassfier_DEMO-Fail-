@@ -31,13 +31,13 @@ print("\n")
 ###########################################################
 
 print("=========== Detecting Object ==============\n")
-os.chdir('/content/SituationClassfier_DEMO')
+os.chdir('/content/SituationClassfier_DEMO/images')
 print(os.getcwd())
 print("\n")
 
-autolist_txt.autolist_json()
-json_list=autolist_txt.json_loader()
-detection.detection(json_list)
+#autolist_txt.autolist_json()
+#json_list=autolist_txt.json_loader()
+detection.detection()
  ### object dot
 
 print("=============== Success =====================\n")
