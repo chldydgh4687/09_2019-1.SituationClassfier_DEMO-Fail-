@@ -8,6 +8,7 @@ from Depth_e import test_davis_videos
 from Object_d import detection
 from images import autolist_txt
 
+print(os.getcwd())
 autolist_txt.autolist_json()
 json_list=autolist_txt.json_loader()
 detection.detection(json_list)
