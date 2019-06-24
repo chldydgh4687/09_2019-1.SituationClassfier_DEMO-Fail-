@@ -44,11 +44,11 @@ def autolist_json():
     print("-------------.json Wrtiting Success-----------")
 
 def json_loader():
-    
-    print(os.getcwd())
+
     json_txt = os.getcwd() + '/json_data_list.txt'
     text_file = open(json_txt, 'r')
     json_list = text_file.readlines()
     text_file.close()
     json_list = [os.path.join(os.getcwd(), i) for i in json_list]
+    print(json_list)
     return json_list
