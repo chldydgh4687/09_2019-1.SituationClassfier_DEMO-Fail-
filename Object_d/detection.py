@@ -1,10 +1,8 @@
 #Fixxing gt
-import os
-import numpy as np
-import cv2
-from matplotlib import pyplot as plt
-import json
 # load a image
+import os
+import json
+import cv2
 
 def detection(json_list):
 
@@ -15,9 +13,10 @@ def detection(json_list):
 # i = iter, data = list
     for i, data in enumerate(json_list):
         with open(data[i]) as json_list:
-            json_data = json.load(json_list)
-            json = json_data["detection_boxes"]
-            print(json)
+            print(data[i])
+            #json_data = json.load(json_list)
+            #json = json_data["detection_boxes"]
+            #print(json)
 
 
 
