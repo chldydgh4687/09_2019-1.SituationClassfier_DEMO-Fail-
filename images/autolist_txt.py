@@ -50,5 +50,5 @@ def json_loader():
     json_list = text_file.readlines()
     text_file.close()
     json_list = [os.path.join(os.getcwd(), i) for i in json_list]
-    print(json_list)
+    print(json_list[0])
     return json_list
