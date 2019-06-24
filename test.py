@@ -31,6 +31,9 @@ print("\n")
 ###########################################################
 
 print("=========== Detecting Object ==============\n")
+print(os.getcwd())
+os.chdir(os.path.commonprefix([os.getcwd(), os.path.dirname(os.path.realpath(__file__))]) + "/images/")
+print(os.getcwd())
 autolist_txt.autolist_json()
 json_list=autolist_txt.json_loader()
 detection.detection(json_list)

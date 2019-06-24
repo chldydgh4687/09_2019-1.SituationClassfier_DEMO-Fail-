@@ -3,7 +3,8 @@ import glob
 import os
 
 def autolist():
-    
+
+
     f = open(os.getcwd()+'/images/data_list.txt','w')
     folder=basename('/SituationClassfier_DEMO/images')
     count = 0
@@ -24,6 +25,7 @@ def autolist():
 
 def autolist_json():
 
+    os.chdir(os.path.commonprefix([os.getcwd(), os.path.dirname(os.path.realpath(__file__))]) + "/images/")
     f = open(os.getcwd() + '/images/json_data_list.txt', 'w')
     folder = basename('/SituationClassfier_DEMO/images')
     count = 0
