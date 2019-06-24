@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Object_d/detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="220">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding>
                 <element signature="e#27#36#0" expanded="true" />
               </folding>
@@ -112,10 +112,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1103" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-168" />
+    <option name="y" value="558" />
+    <option name="width" value="1093" />
+    <option name="height" value="618" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -198,11 +199,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="882" height="830" extended-state="0" />
+    <frame x="-134" y="447" width="874" height="494" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27304965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2756563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -309,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Object_d/detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="220">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
             <element signature="e#27#36#0" expanded="true" />
           </folding>
