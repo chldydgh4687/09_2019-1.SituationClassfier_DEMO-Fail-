@@ -14,7 +14,7 @@ def detection(json_list):
 
     #json_list = path 배열
     for i, data in enumerate(json_list):
-        with open(data[:-3]) as json_list:
+        with open(data[:-1]) as json_list:
             json_data = json.load(json_list)
             json = json_data["detection_boxes"]
             print(json)
