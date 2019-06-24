@@ -3,15 +3,30 @@ import os
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
-
+import json
 # load a image
 
-def detection():
+def detection(json_list):
 
 ## SSD
     
     os.chdir(os.path.commonprefix([os.getcwd(),os.path.dirname(os.path.realpath(__file__))])+"/images/")
     print(os.getcwd())
+    json = []
+# i = iter, data = list
+    for i, data in enumerate(json_list):
+        with open(data[i]) as json_file:
+            json_data = json.load(json_file)
+
+        json = json_data["detection_boxes"]
+        for k, gt in enumerate(json):
+            print(gt[k])
+
+
+
+
+
+
     img = cv2.imread('frame00020.jpg')
     cv2.rectangle(img,(220,0),(320,300), (255,0,0), 3)
         
